@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Statistics</title>
+    <!--  include bootstrap css  -->
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <!--  include animate css  -->
+    <link rel="stylesheet" href="./asset/css/animate.css">
+    <!--  include owl carousel css  -->
+    <link rel="stylesheet" href="./asset/css/owl.carousel.min.css">
+    <!--  include fontawesome css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="./asset/css/style-statistics.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <div class="container-fluid p-0 m-0">
+        <div class="navbar row d-flex p-0 m-0 text-align-center justify-content-center text-center bg-primary">
+            <div class="title col-md-3  m-0 p-0">
+                <h1 class="pb-3">Overall Statistics</h1>
+            </div>
+        </div>
+        <div class="item-1">
+            <div class="division-weekly col-md-12 row p-0 m-0 mt-5 mb-5">
+                <div class="weekly col-md-4 d-flex text-align-center justify-content-end">
+                    <h3 class="p-0 m-0">Weekly Statistics</h3>
+                </div>
+                <div class="selecter col-md-8 d-flex text-align-center justify-content-start">
+                    <select name="engine" class="engineSelect mr-4 {prevLevelsIncluding: 'year,make,model,engine'}">
+                        <option value="" selected="selected">---Year---</option>
+                        <option value="">2015</option>
+                        <option value="">2016</option>
+                        <option value="">2017</option>
+                        <option value="">2018</option>
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        ?&gt;
+                    </select>
+                    <select name="engine" class="engineSelect mr-4 {prevLevelsIncluding: 'year,make,model,engine'}">
+                        <option value="" selected="selected">---Month---</option>
+                        <option value="">January</option>
+                        <option value="">Feburary</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">August</option>
+                        <option value="">September</option>
+                        <option value="">October</option>
+                        <option value="">November</option>
+                        <option value="">December</option>
+                        ?&gt;
+                    </select>
+                    <select id="engine" class="engineSelect {prevLevelsIncluding: 'year,make,model,engine'}" onchange="selWeek()">
+                        <option value="" selected="selected">----Week---</option>
+                        <option value="first">First</option>
+                        <option value="second">Second</option>
+                        <option value="third">Third</option>
+                        <option value="forth">Forth</option>
+                        ?&gt;
+                    </select>
+                </div>
+            </div>
+            <div class="bs-example container" data-example-id="striped-table">
+                <table class="table table-striped table-bordered table-hover">
+                    <tr>
+                        <td>No.</td>
+                        <td>Name</td>
+                        <td>Should Work Hours</td>
+                        <td>Actual Work Hours</td>
+                        <td>Late</td>
+                        <td>Early Leave</td>
+                        <td>Absent</td>
+                        <td>Sickness</td>
+                        <td>Business Trip</td>
+                    </tr>
+                    <tbody id="test">
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="item-2">
+            <div class="division-weekly col-md-12 row p-0 m-0 mt-5 mb-5">
+                <div class="weekly col-md-4 d-flex text-align-center justify-content-end">
+                    <h3 class="p-0 m-0">Monthly Statistics</h3>
+                </div>
+                <div class="selecter col-md-8 d-flex text-align-center justify-content-start">
+                    <select name="engine" class="engineSelect mr-4 {prevLevelsIncluding: 'year,make,model,engine'}">
+                        <option value="" selected="selected">---Year---</option>
+                        <option value="">2015</option>
+                        <option value="">2016</option>
+                        <option value="">2017</option>
+                        <option value="">2018</option>
+                        <option value="">2019</option>
+                        <option value="">2020</option>
+                        ?&gt;
+                    </select>
+                    <select id="engine-1" class="engineSelect mr-4 {prevLevelsIncluding: 'year,make,model,engine'}" onchange="selMonth()">
+                        <option value="" selected="selected">---Month---</option>
+                        <option value="first">January</option>
+                        <option value="second">Feburary</option>
+                        <option value="third">March</option>
+                        <option value="forth">April</option>
+                        <option value="fifth">May</option>
+                        <option value="sixth">June</option>
+                        <option value="seventh">July</option>
+                        <option value="eighth">August</option>
+                        <option value="nineth">September</option>
+                        <option value="tenth">October</option>
+                        <option value="eleventh">November</option>
+                        <option value="twelveth">December</option>
+                        ?&gt;
+                    </select>
+                </div>
+            </div>
+            <div class="bs-example container" data-example-id="striped-table">
+                <table class="table table-striped table-bordered table-hover">
+                    <tr>
+                        <td>No.</td>
+                        <td>Name</td>
+                        <td>Should Work Hours</td>
+                        <td>Actual Work Hours</td>
+                        <td>Late</td>
+                        <td>Early Leave</td>
+                        <td>Absent</td>
+                        <td>Sickness</td>
+                        <td>Business Trip</td>
+                    </tr>
+                    <tbody id="test-1">
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="./asset/js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap bundle js -->
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="./asset/js/owl.carousel.min.js"></script>
+    <!-- custom js -->
+    <script src="./asset/js/custom.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+
+    
+
+</body>
+
+</html>

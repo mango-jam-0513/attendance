@@ -9,10 +9,15 @@ body {
   padding: 0;
   margin: 0;
 }
-#callender {
+#callender,
+#callender1 {
   width: 180px;
   margin: 0 20px 20px 20px;
 }
 #callender > span:hover {
   cursor: pointer;
+}
+.date-start h4,
+.date-end h4 {
+  padding-top: 22px;
 }
