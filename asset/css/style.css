@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  border: solid 2px rgb(29, 32, 41);
+  height: 100vh;
+  background: white;
+}
+.title {
+  padding: 20px 30px;
+  color: #ebeff3;
+}
+.img {
+  overflow: hidden;
+}
+.img img {
+  width: 100%;
+  height: 89.5vh;
+  padding: 3rem 2rem;
+}
+
+input,
+p {
+  height: 33px;
+}
+input {
+  outline: none;
+}
+.select-items {
+  height: 40px;
+}
+.subtitle {
+  height: 10%;
+}
+.subtitle,
+.desc,
+.select-items {
+  height: 20%;
+}
+.engineSelect {
+  height: 33px;
+}
+.ml-5 {
+  border-radius: 50%;
+  width: 5rem;
+}
+.fas {
+  font-size: 33px;
+  color: blueviolet;
+}
+#hiddenInput,
+#hiddenBtn {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .subtitle p {
+    padding-left: 0 !important;
+  }
+  .custom-control {
+    margin: 0;
+  }
+  .item input {
+    margin-top: 13px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    height: 275vh;
+  }
+  .subtitle p,
+  .subtitle input {
+    margin-left: 3rem;
+  }
+  .search-group .col-md-3 {
+    margin-left: 3rem;
+  }
+  .search-group div {
+    margin-left: 3rem;
+  }
+}
