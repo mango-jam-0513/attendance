@@ -1,14 +1,4 @@
-// addition = () => {
-//     var x = document.getElementById("hidden");
-//     var y = document.getElementById("hidden-item");
-//     if (x.style.display === "none") {
-//         x.style.display = "block";
-//     } else {
-//         x.style.display = "none";
-//     }
-    
-    
-// }
+
 
 var show  = true;
 const visibleButtonItem = document.getElementById('hiddenBtn');
@@ -25,3 +15,25 @@ function addition (){
         show = true;
     }
 }
+// =============detail callender============
+ $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+ $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+
+// ====================chart callender===============
+
+$(function () {
+  $("#callender").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});

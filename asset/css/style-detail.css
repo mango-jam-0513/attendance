@@ -1,0 +1,53 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.title h1 {
+  color: white;
+}
+input {
+  outline: none;
+}
+td {
+  text-align: center;
+  justify-content: center;
+}
+.table .top {
+  padding-top: 33px;
+}
+#datepicker {
+  width: 180px;
+  margin: 0 20px 20px 20px;
+}
+#datepicker > span:hover {
+  cursor: pointer;
+}
+#datepicker1 {
+  width: 180px;
+  margin: 0 20px 20px 20px;
+}
+#datepicker1 > span:hover {
+  cursor: pointer;
+}
+.date-start h4 {
+  padding-top: 22px;
+}
+.date-end h4 {
+  padding-top: 22px;
+}
+.personal input {
+  width: 180px;
+  height: 34px;
+  color: black;
+  border-radius: 3px;
+}
+.personal h4 {
+  padding-top: 7px;
+}
